@@ -69,3 +69,8 @@ Se debe modificar para introducir los parámetros necesarios para poder acceder 
 * Recursos compartido
 * Nombre de la ruta o carpeta del servidor remoto dond ese encuentran los archivos
 * Nombre del fichero a subir o descargar
+
+## Agradecimientos
+Estos ejemplo se basan en el código de [miketeo](https://github.com/miketeo), qu ees el desarrolador de [pysmb](https://github.com/miketeo/pysmb)
+
+

@@ -28,7 +28,7 @@ def ListaRecursosServidor(userID, password, local_ip, server_ip, domain_name):
 	#print domain_name
 	Aux = []
 	if (server_name == 'ERROR'):
-		print 'NO somos capaces de saber el nombre remoto por NETBIOS usamos su direccion Ip: ' + server_ip
+		print 'No somos capaces de saber el nombre remoto por NETBIOS usamos su direccion Ip: ' + server_ip
 		server_name = server_ip
 	try:
 		#print userID, password, client_machine_name, server_name, domain_name
@@ -57,7 +57,7 @@ def SubirFichero(userID, password, local_ip, server_ip, domain_name, Nombre_Recu
 	try:
 		conn = SMBConnection(userID, password, client_machine_name, server_name, domain=domain_name, use_ntlm_v2=True,is_direct_tcp=True)
 	except:
-		print 'Error al conectar. No pdemos subir con el usuario: ' + userID + ' a la maquina: ' + server_ip + ' el fichero ' + filename
+		print 'Error al conectar. No podemos subir con el usuario: ' + userID + ' a la maquina: ' + server_ip + ' el fichero ' + filename
 	if conn:
 		conn.connect(server_ip, 445)
 		print '************************'
