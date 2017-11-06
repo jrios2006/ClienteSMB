@@ -6,13 +6,21 @@ from PaqueteSBM.ClienteSMB import getBIOSName
 from PaqueteSBM.ClienteSMB import ListaRecursosServidor
 from PaqueteSBM.ClienteSMB import SubirFichero
 from PaqueteSBM.ClienteSMB import Descargar
+import socket
+
+# ir comentado lo que no se quiera ejecutar
+
+# Averiguo la Ip del AS400 y su nombre
+iplocal = socket.gethostbyname(socket.gethostname())
+print getBIOSName(iplocal) + '(' + iplocal + ')'
+
 
 # Variables de acceso
 userID = 'USER' # Usuario del sistema remoto a acceder
 password= 'PASS' # Password del sistema remoto a acceder
 remote_smb_ip = '192.168.1.11' # Direccion Ip del servidor remoto
 domain_name = 'DOMINIO' # Dominio del servidor Windows o remoto
-local_ip = '127.0.0.1' # Dirección Ip de la máquina local, no es necesario
+local_ip = '127.0.0.1' # Dirección Ip de la máquina local, no es necesario, ver las líneas de más arriba
 
 # Obtengo los nombre de las máquinas remotas
 server_ip = getBIOSName(remote_smb_ip, timeout=5)
