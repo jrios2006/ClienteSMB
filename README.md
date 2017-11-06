@@ -66,8 +66,8 @@ Se debe modificar para introducir los parámetros necesarios para poder acceder 
 * Contraseña del servidor remoto
 * Ip del servidor remoto
 * Dominio del servidor remoto
-* Recursos compartido
-* Nombre de la ruta o carpeta del servidor remoto dond ese encuentran los archivos
+* Recurso compartido
+* Nombre de la ruta o carpeta del servidor remoto donde se encuentran los archivos
 * Nombre del fichero a subir o descargar
 
 ## Agradecimientos
