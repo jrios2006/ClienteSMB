@@ -35,7 +35,7 @@ Hay dos posibilidades:
 
 2. Instalar python 2.7 desde la web [iSeriesPython](http://www.iseriespython.com/)
 Aquí no se tratar de enseñar a instalar python en el iSeries
-Las pruebas están realizadas con python 2.7, iSeriesPython.
+Las pruebas están realizadas con python 2.7, [iSeriesPython](http://www.iseriespython.com/).
 
 ## Instalación de las librerías
 Para instalar los módulos necesarios para poder usar el cliente SMB en python, es necesario descargar las carpetas:
