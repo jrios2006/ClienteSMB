@@ -26,7 +26,7 @@ print ListaRecursosServidor(userID, password, local_ip, remote_smb_ip, domain_na
 # Variables del fichero
 Nombre_Recurso = 'Datos' # Nombre del recurso remoto, es posible obtenerlo de la función ListaRecursosServidor
 path_destino = '/Papelera/' # Ruta del servidor remoto
-filename = '/Dcos/fichero.pdf' # Nombre del fichero del IFS que queramos subir al servidor remoto
+filename = '/Docs/fichero.pdf' # Nombre del fichero del IFS que queramos subir al servidor remoto
 
 # Subimos el fichero, filename debe existir
 SubirFichero(userID, password, local_ip, server_ip, domain_name, Nombre_Recurso, path_destino, filename)
@@ -39,7 +39,7 @@ SubirFichero(userID, password, local_ip, server_ip, domain_name, Nombre_Recurso,
 
 #Prueba a generar un fichero zip
 comprimir(filename, '/Docs/novale.zip', 'kk.txt')
-SubirFichero(userID, password, local_ip, server_ip, domain_name, Nombre_Recurso, path_destino, '/Amic/Scripts/asociados.zip')
+SubirFichero(userID, password, local_ip, server_ip, domain_name, Nombre_Recurso, path_destino, '/Docs/asociados.zip')
 
 # Descargar se tiene que verificar para que funcione con ficheros binarios, no solo texto
 Nombre_Recurso = 'Datos' # Nombre de recurso remoto
