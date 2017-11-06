@@ -50,7 +50,7 @@ def SubirFichero(userID, password, local_ip, server_ip, domain_name, Nombre_Recu
 	Aux = False
 	server_name = getBIOSName(server_ip, timeout=5)
 	client_machine_name = getBIOSName(local_ip, timeout=5)
-	print server_name + '/' + client_machine_name
+	#print server_name + '/' + client_machine_name
 	if (server_name == 'ERROR'):
 		print 'No somos capaces de saber el nombre remoto(' + server_ip + ') por NETBIOS usamos su direccion Ip: ' + server_ip
 		server_name = server_ip
@@ -82,14 +82,11 @@ def SubirFichero(userID, password, local_ip, server_ip, domain_name, Nombre_Recu
 def Descargar(userID, password, local_ip, server_ip, domain_name, Nombre_Recurso, path_destino, filename, NombreFicheroIFS):
 	# Descargo un fichero remoto al IFS local del AS400
 	# NombreFicheroIFS es el nombre con la ruta completa donde guardamos el fichero
-	# Hay un problema con la codificacion de los ficheros
-	# 426-Unable to convert data from CCSID 1208 to CCSID 819: reason 3021 al intentar descar por FTP el fichero y 
-	# comprobar la función
 	import tempfile, shutil, os
 	Aux = False
 	server_name = getBIOSName(server_ip, timeout=5)
 	client_machine_name = getBIOSName(local_ip, timeout=5)
-	print server_name + '/' + client_machine_name
+	#print server_name + '/' + client_machine_name
 	if (server_name == 'ERROR'):
 		print 'No somos capaces de saber el nombre remoto(' + server_ip + ') por NETBIOS usamos su direccion Ip: ' + server_ip
 		server_name = server_ip
@@ -100,8 +97,8 @@ def Descargar(userID, password, local_ip, server_ip, domain_name, Nombre_Recurso
 	if conn:
 		conn.connect(server_ip, 445)
 		file_obj = tempfile.NamedTemporaryFile()
-		print("Fichero temporal: {}".format(file_obj.name))
-		print type(file_obj)
+		#print("Fichero temporal: {}".format(file_obj.name))
+		#print type(file_obj)
 		NombreFicheroTemporal = file_obj.name
 		try:
 			file_attributes, filesize = conn.retrieveFile(Nombre_Recurso, path_destino + filename , file_obj)

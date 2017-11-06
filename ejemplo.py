@@ -42,7 +42,10 @@ comprimir(filename, '/Docs/novale.zip', 'kk.txt')
 SubirFichero(userID, password, local_ip, server_ip, domain_name, Nombre_Recurso, path_destino, '/Amic/Scripts/asociados.zip')
 
 # Descargar se tiene que verificar para que funcione con ficheros binarios, no solo texto
-'''
-Descargar(userID, password, local_ip, server_ip, domain_name, Nombre_Recurso, path_destino, filename, NombreFicheroIFS)
-'''
+Nombre_Recurso = 'Datos' # Nombre de recurso remoto
+path_destino = '/Papelera/' # Ruta donde se encuentra el archivo
+filenameremoto = '1.jpg' # Nombre del fichero (debe existir)
+NombreFicheroIFS = '/Docs/novale.jpg' # Nombre completo donde dejará el fichero en el IFS
+Descargar(userID, password, local_ip, server_ip, domain_name, Nombre_Recurso, path_destino, filenameremoto, NombreFicheroIFS)
+
 
