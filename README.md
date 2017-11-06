@@ -1,7 +1,7 @@
 # ClienteSMB
 Cliente SMB en python para AS400.
 
-Para que un AS400 puede utilizar recursos remotos (carpetas compartidas) mediante el protocolo CIFS a samba es necesatio configurar el AS400.
+Para que un AS400 puede utilizar recursos remotos (carpetas compartidas) mediante el protocolo CIFS o samba es necesatio configurar el AS400.
 
 ## Restricciones del cliente SMB del iSeries
 
@@ -16,9 +16,9 @@ Estas dos limitaciones son muy importantes y demasiado exigentes, a veces no es 
 Además esto es un riesgo de seguridad pues el mismo usuario y contraseña que accede al recurso remoto debe existir en el iSeries.
 
 
-Otra limitación que se trata de subsanar es que al estar integrados los usuarios entre las distintas máquinas, todos los usuarios del iSeries que quieran acceder al recurso remoto deben estar en elos dos sistemas.
+Otra limitación que se trata de subsanar es que al estar integrados los usuarios entre las distintas máquinas, todos los usuarios del iSeries que quieran acceder al recurso remoto deben estar en los dos sistemas.
 	
-Con el cliente escrito en python se trata de mitigar estos riesgos de seguridad. 
+Con el cliente escrito en python se trata de mitigar estos riesgos de seguridad e independizar el usuario de acceso con los usuarios del AS400. 
 
 
 El sistema remoto crea uno o varios usuarios para el acceso a estas carpetas remotas y con este usuario los usuarios de AS440 podrán acceder a dejar ficheros o a subirlos a nuestro AS400.
@@ -46,7 +46,7 @@ Para instalar los módulos necesarios para poder usar el cliente SMB en python, 
 
 Estas carpetas hay que colocarlas en la carpeta IFS **/python27/site-packages**, para luego poder usarlas
 
-Para las pruebas se ha creado una carpeta con las funciones básicas para poder acceder a descargar un archivo, subir un archivo, etc.
+Para las pruebas se ha creado una carpeta con las funciones básicas para poder acceder a descargar un archivo, subir un fichero, etc.
 Esta carpeta se llama **PaqueteSMB**, esta carpeta también debe ir a la ruta del IFS /python27/site-packages
 
 ## PaqueteSMB
