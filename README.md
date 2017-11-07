@@ -73,7 +73,7 @@ Se debe modificar para introducir los parámetros necesarios para poder acceder 
 ## Agradecimientos
 Su usan el código de [miketeo](https://github.com/miketeo), que es el desarrolador de [pysmb](https://github.com/miketeo/pysmb)
 
-Hay otro ejemplo en el sitio de [humberry](https://github.com/humberry) con el [fichero ](https://github.com/humberry/SMBclient/blob/master/SMBclient.py)
+Hay otro ejemplo en el sitio de [humberry](https://github.com/humberry) con el [fichero ](https://github.com/humberry/smb-example/blob/master/smb-test.py)
 
 
 
